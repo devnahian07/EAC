@@ -1,0 +1,14 @@
+struct Runtime {
+    clock_t start;
+    Runtime() {
+        start = clock();
+    }
+    ~Runtime() {
+        cout << "Runtime: " << fixed << setprecision(3) << (double)(clock() - start) / CLOCKS_PER_SEC << "s\n";
+    }
+};
+
+int main() {
+    Runtime lulu;
+    // just code r kisu lagbe na
+}
